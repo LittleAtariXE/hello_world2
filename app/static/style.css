@@ -1,0 +1,51 @@
+body
+{
+	background-image: url(img/matrix1.jpg);
+}
+
+#container
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #a3e1dd;
+}
+
+#logo
+{
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(img/logo1.jpg);
+	margin-top: 5px;
+
+}
+
+#logo img
+{
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
+	float: left;
+}
+
+#logo span
+{
+	float: left;
+	font-size: 50px;
+	padding: 20px 0;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: white;
+}
+
+
+
+@media screen and (max-width: 500px)
+{
+	#container,
+	#logo
+	{
+		width: 98%;
+	}
+}
