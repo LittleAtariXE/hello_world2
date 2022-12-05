@@ -8,17 +8,27 @@
 </head>
 <body>
     
-
     <div id="container">
-        <div id="logo">
-            <img src="{{ url_for('static', filename='img/haker2.jpg') }}" />
-            <span>Hello World </span>
-            <img src="{{ url_for('static', filename='img/haker2.jpg') }}" />
-            <div style="clear: both;"></div>
+        <div id="header">
+            <img class="logo-img" src="{{ url_for('static', filename='img/gray01.jpeg') }}" />
+            <div class="logo-text">Hello World</div>
+            <img class="logo-img" src="{{ url_for('static', filename='img/gray01.jpeg') }}" />
         </div>
-        {% block content %}
-        {% endblock %}
+
+        <div id="navbar">
+            <a href="{{ url_for('main.home') }}">Home</a>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <div id="content">
+
+            {% block content %}
+            {% endblock %}
+        </div>
     </div>
+ 
 
     
 
