@@ -1,3 +1,8 @@
+*
+{
+	box-sizing: border-box;
+}
+
 body
 {
 	background-image: url(img/matrix1.jpg);
@@ -17,7 +22,7 @@ body
 	width: 75%;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: red;
+	background-image: url(img/logo1.jpg);
 	display: grid;
 	grid: 100px / 1fr 2fr 1fr;
 
@@ -29,6 +34,13 @@ body
 	display: grid;
 	place-items: center;
 	font-size: 5vw;
+	color: white;
+}
+
+#nav-logo:hover
+{
+	color: red;
+
 }
 
 .nav-img
@@ -43,16 +55,92 @@ body
 	object-fit: contain;
 }
 
+#menu-wrapper
+{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	
+	display: grid;
+	grid-gap: 5px;
+	grid: 30px / 1fr 1fr 1fr 1fr
+}
+
+#menu-wrapper a
+{
+	display: grid;
+	place-items: center;
+	background-color: white;
+}
+
+#menu-wrapper a:hover
+{
+	background-color: red;
+}
+
+#home-header
+{
+	width: 100%;
+	background-color: lightgray;
+	background-image: url(img/h1.gif);
+	margin-top: 15px;
+	text-align: center;
+	font-size: 150%;
+	color: white;
+	font-weight: 700;
+}
+
+#home-wrapper
+{
+	width: 100%;
+	
+	margin-top: 10px;
+}
+
+.home-item
+{
+	margin-top: 30px;
+
+}
+
+.home-item::after
+{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.home-item-img
+{
+	float: left;
+	display: block;
+	padding: 10px;
+	min-width: 25%;
+
+}
 
 
-@media screen and (max-width: 1000px)
+
+.home-item-text
+{
+	float: left;
+	padding: 10px;
+	min-width: 75%;
+	background-color: white;
+}
+
+
+
+@media screen and (max-width: 600px)
 {
 	#site-container
 	{
 		width: 98%;
 	}
 
-	#nav-wrapper
+	#nav-wrapper,
+	#menu-wrapper
 	{
 		width: 100%;
 	}
@@ -60,5 +148,11 @@ body
 	#nav-logo
 	{
 		font-size: 8vw;
+	}
+
+	.home-item-img,
+	.home-item-text
+	{
+		width: 100%;
 	}
 }

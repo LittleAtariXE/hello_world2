@@ -1,1 +1,30 @@
 {% extends "base.html" %}
+
+{% block content %}
+
+	<div id="home-header">
+		<h1> Witaj Przybyszu !!! </h1>
+		<span> Wybierz coś z Menu dla siebie ... </span>
+	</div>
+
+	<div id="home-wrapper">
+		<div class="home-item">
+			<a href="{{ url_for('fake.home') }}"><img class="home-item-img" src="{{ url_for('static', filename='img/mf1.jpg') }}" /></a>
+			<div class="home-item-text">Stwórz Fejkową postać</div>
+		</div>
+
+		<div class="home-item">
+			<a href="#"><img class="home-item-img" src="{{ url_for('static', filename='img/mf1.jpg') }}" /></a>
+			<div class="home-item-text">Stwórz Fejkową postać</div>
+		</div>
+
+		<div class="home-item">
+			<a href="#"><img class="home-item-img" src="{{ url_for('static', filename='img/mf1.jpg') }}" /></a>
+			<div class="home-item-text">Stwórz Fejkową postać</div>
+		</div>
+
+	</div>
+
+
+
+{% endblock %}
