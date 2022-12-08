@@ -1,0 +1,8 @@
+o2.pl
+onet.pl
+wp.pl
+int.pl
+gmail.com
+interia.pl
+gazeta.pl
+yahoo.com

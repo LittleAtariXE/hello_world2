@@ -1,7 +1,46 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1> MAKE FAKE</h1>
+  <div id="mf-content">
+    <h1 style="text-align: center;">!!! Stwórz Fejka !!!</h1>
+    <div class="mf-border"></div>
+    <form action="" method="POST">
+        {{ form.hidden_tag() }}
+
+        <div class="mf-row">
+          <h3> {{ form.name.label }} </h3>
+        </div>
+       
+        <div class="mf-row">
+          {{ form.name(class="mf-input") }}
+        </div>
+        <div class="mf-border"></div>
+        <div class="mf-row">
+          <h3> {{ form.surname.label }} </h3>
+        </div>
+        <div class="mf-row">
+          {{ form.surname(class="mf-input")}}
+        </div>
+        <div class="mf-border"></div>
+        <div class="mf-row">
+          <h3> {{ form.birth.label }} </h3>
+        </div>
+        <div class="mf-row">
+          {{ form.birth(class="mf-input") }}
+        </div>
+        <div class="mf-border"></div>
+        <div class="mf-row">
+          <h3> {{ form.email.label }} </h3>
+        </div>
+        <div class="mf-row">
+          {{ form.email(class="mf-input") }}
+        </div>
+         <div class="mf-border"></div>
+        <div class="mf-row">
+          {{ form.submit() }}
+        </div>
+    </form>
+  </div>
 
 
 {% endblock %}

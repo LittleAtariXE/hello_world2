@@ -7,30 +7,19 @@
     <title>Hello World</title>
 </head>
 <body>
-    
-    <div id="container">
-        <div id="header">
-            <img class="logo-img" src="{{ url_for('static', filename='img/gray01.jpeg') }}" />
-            <div class="logo-text">Hello World</div>
-            <img class="logo-img" src="{{ url_for('static', filename='img/gray01.jpeg') }}" />
-        </div>
 
-        <div id="navbar">
-            <a href="{{ url_for('main.home') }}">Home</a>
-            <a href="{{ url_for('fake.home') }}">Make Fake</a>
-            <div>3</div>
-            <div>4</div>
-        </div>
+    <div id="site-container">
+        <div id="nav-wrapper">
+            <div class="nav-img"><img src="{{ url_for('static', filename='img/logo2.jpg') }}" /></div>
+            <div id="nav-logo">Hello World</div>
+            <div class="nav-img"><img src="{{ url_for('static', filename='img/logo2.jpg') }}" /></div>
 
-        <div id="content">
-
-            {% block content %}
-            {% endblock %}
         </div>
     </div>
- 
 
-    
+
+
+
 
 </body>
 </html>
