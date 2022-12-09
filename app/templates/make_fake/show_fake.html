@@ -1,35 +1,28 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div id="mf-show-title">
-    <h1> !!! Twój Fejk !!! </h1>
+  <div id="mf-show-header">
+    <h1> Twój Fejk </h1>
   </div>
 
-  <div id="mf-show-content">
+  <div id="mf-show-wrapper">
+    <h2>Imię: {{ fake.imie }}</h2>
+    <h2>Nazwisko: {{ fake.nazw }} </h2>
+    <h2>Data Urodzenia: {{ fake.data_UR() }}</h2>
+    <h2>PESEL: {{ fake.pesel }}</h2>
+    <h2>Email: {{ fake.email }}</h2>
 
-    <div class="mf-show-item">
-      Imię: <span>{{ fake.imie }}</span>
-    </div>
 
-    <div class="mf-show-item">
-      Nazwisko: <span>{{ fake.nazw}}</span>
-    </div>
 
-    <div class="mf-show-item">
-      Data_ur: <span>{{ fake.data_UR()}}</span>
-    </div>
 
-    <div class="mf-show-item">
-      PESEL: <span>{{ fake.pesel}}</span>
-    </div>
-
-    <div class="mf-show-item">
-      Email: <span>{{ fake.email}}</span>
-    </div>
 
     <div class="mf-show-item">
       <button id="mf-show-refresh"><a href="{{ url_for('fake.show_fake') }}">GENERUJ</a></button>
     </div>
+
+  </div>
+
+   
 
     
 

@@ -79,6 +79,10 @@ body
 	background-color: red;
 }
 
+
+
+/*-----------MAIN--------------*/
+
 #home-header
 {
 	width: 100%;
@@ -132,6 +136,82 @@ body
 
 
 
+
+
+/*-----------MAKE FAKE--------------*/
+
+#mf-header
+{
+	width: 100%;
+	text-align: center;
+	background-color: lightgray;
+	margin-top: 15px;
+}
+
+#mf-wrapper
+{
+	width: 75%;
+	background-image: url(img/back3.jpg);
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.mf-item
+{
+	text-align: center;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.mf-item-border
+{
+	border: 2px solid black;
+}
+
+.mf-item-label
+{
+	color: white;
+	font-size: 150%;
+	display: block;
+}
+
+.mf-item-input
+{
+	margin-top: 2px;
+	min-width: 200px;
+	min-height: 30px;
+	text-align: center;
+	font-size: 150%;
+}
+
+#mf-show-header
+{
+	width: 75%;
+	background-color: lightgray;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#mf-show-wrapper
+{
+	width: 75%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+	text-align: center;
+
+}
+
+#mf-show-refresh
+{
+	min-height: 40px;
+	width: 150px;
+	background-color: green;
+}
+
+
 @media screen and (max-width: 600px)
 {
 	#site-container
@@ -140,7 +220,8 @@ body
 	}
 
 	#nav-wrapper,
-	#menu-wrapper
+	#menu-wrapper,
+	#mf-wrapper
 	{
 		width: 100%;
 	}
